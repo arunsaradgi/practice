@@ -1,22 +1,22 @@
-function creator1(o) {
+function creator1(o,a,b,c,d,e) {
   let obj = o;
 
-  obj.property1 = 1;
-  obj.property2 = 2;
-  obj.property3 = 3;
-  obj.property4 = 4;
-  obj.property5 = 5;
+  obj.property1 = a;
+  obj.property2 = b;
+  obj.property3 = c;
+  obj.property4 = d;
+  obj.property5 = e;
 
   return obj;
 }
 
-function creator2() {
+function creator2(a,b,c,d,e,f) {
   let obj = {};
 
-  creator1(obj);
-  obj.property6 = 6;
+  creator1(obj,a,b,c,d,e);
+  obj.property6 = f;
 
   return obj;
 }
 
-console.log(creator2());
+console.log(creator2('a','b','c','d','e','f'));
