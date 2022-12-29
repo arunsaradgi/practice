@@ -2,7 +2,6 @@ IPhone1.prototype.call=function () {
     return `Iphone${this.generation} is ringing`;
 }
 
-
 function IPhone1(generation, ASIN, weight, OS, RAM, color, display, camera){
     this.generation=generation;
     this.ASIN=ASIN;
